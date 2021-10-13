@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0;
+            margin:0;
+            background-color:black;
+        }
+        div{
+            width:200px;
+            height:200px;
+            background-color: bisque;
+            margin-top:4px;
+        }
+        .specialOne{
+            background-color: darkkhaki;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="specialOne"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        const specialOne = document.querySelector('.specialOne')
+        specialOne.addEventListener('click',(e)=>{
+            console.log(`client : ${e.clientX},${e.clientY}`)
+            console.log(`page : ${e.pageX},${e.pageY}`)
+
+        })
+    </script>
+</body>
+</html>
