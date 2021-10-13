@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js" defer></script>
+</head>
+<body>
+    
+</body>
+    <script>
+        // only document. html만 로드되면 로드됨
+        window.addEventListener('DOMContentLoaded', ()=>{
+            console.log('DOMContentLoaded')
+        })
+        // after resources(css, images) 다 로드되야지 호출됨
+        window.addEventListener('load', ()=>{
+            console.log('load')
+        })
+        //before unload
+        window.addEventListener('beforeunloaded', ()=>{
+            console.log('beforeunloaded')
+        })
+        //resource is being unloaded
+        window.addEventListener('unload', ()=>{
+            console.log('unload')
+        })
+    </script>
+</html>
