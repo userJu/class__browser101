@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            background-color:black;
+        }
+        img{
+            width:150px;
+            height:200px;
+        }
+        button{
+            background-color:rgb(146, 101, 18)
+        }
+        button:hover{
+            background-color:orange
+
+        }
+    </style>
+  </head>
+  <body>
+    <button class="find">♥ Find a rabbit ♥</button>
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/rabbit.png" alt="" class="rabbit">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    <img src="img/carrot.png" alt="" class="carrot">
+    
+    <script>
+        const button = document.querySelector('.find')
+        const rabbit = document.querySelector('.rabbit')
+        button.addEventListener('click', (e)=>{
+            rabbit.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+    </script>
+    </body>
+</html>
